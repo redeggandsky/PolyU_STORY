@@ -1,0 +1,7 @@
+diagnostics#诊断程序，诊断的#3
+interpreter#口译员，翻译器#3
+interpreted#解释，解释执行，演绎#4
+execute#执行#3
+executable#可执行的#3
+vertical#垂直的#4
+virtual#虚拟的#4
