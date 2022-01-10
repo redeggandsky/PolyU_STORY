@@ -27,6 +27,13 @@ class Model:
         FL = open("words.txt", "w", encoding= "UTF-8")
         for i in self.words[1:]:
             FL.write(i[0]+'#'+i[2]+'#'+str(i[1])+'\n')
+        FL.close()
+        FL = open("EN_words.txt","x")
+        FL.close()
+        FL = open("EN_words.txt","w", encoding= "UTF-8")
+        for i in self.words[1:]:
+            FL.write(i[0]+'\n')
+        FL.close()
 
     def inst(self, x: list):
         #print('inst ', x)
