@@ -1,4 +1,5 @@
 # coding=utf-8
+import random
 
 class Model:
     def __init__(self) -> None:
@@ -40,8 +41,10 @@ class Model:
         self.n += 1
         self.words.append(x)
         p = self.n
-        while(p > 1 and self.words[p][1] < self.words[p//2][1]):
+        while(p > 1 and self.words[p][1] <= self.words[p//2][1]):
             #print(str(p) + " - ", self.words[p], " : ", self.words[p//2])
+            if self.words[p][1] == self.words[p//2][1] and random.random() < 0.5:
+                break
             self.words[p//2], self.words[p] = self.words[p], self.words[p//2]
             p //= 2
 
@@ -66,9 +69,13 @@ class Model:
             else:
                 #print(self.words[p],self.words[p*2],self.words[p*2+1])
                 if(self.words[p * 2 + 1][1] <= self.words[p * 2][1] and self.words[p * 2 + 1][1] <= self.words[p][1]):
+                    if self.words[p * 2 + 1][1] == self.words[p][1] and random.random() < 0.5:
+                        break
                     self.words[p * 2 + 1], self.words[p] = self.words[p], self.words[p * 2 + 1]
                     p = p * 2 + 1
                 elif (self.words[p * 2][1] <= self.words[p * 2 + 1][1] and self.words[p * 2][1] <= self.words[p][1]):
+                    if self.words[p * 2][1] == self.words[p][1] and random.random() < 0.5:
+                        break
                     self.words[p * 2], self.words[p] = self.words[p], self.words[p * 2]
                     p = p * 2
                 else:

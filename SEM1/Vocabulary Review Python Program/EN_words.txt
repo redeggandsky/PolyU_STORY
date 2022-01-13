@@ -1,0 +1,26 @@
+diagnostics
+symbolic
+virtual
+entrust
+interpreter
+assembler
+contemporary
+execute
+object-orientied
+executable
+macros
+out of bounds
+assembly
+interpreted
+relocatable
+operand
+interplay
+shorthands
+generic
+preprocerssor
+source language
+syntax
+opcode
+substancial
+vertical
+convert

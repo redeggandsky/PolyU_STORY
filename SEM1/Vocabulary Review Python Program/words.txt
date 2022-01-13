@@ -14,8 +14,13 @@ assembler#汇编器#0
 substancial#实体性#0
 convert#转换#0
 relocatable#浮动的，可重置的#0
+contemporary#当代的，现代的#0
+generic#一般的，类的，通用的#0
+interplay#相互作用，交互#0
 object-orientied#面向对象#0
 shorthands#简略表示方法，简写#0
 macros#宏指令，宏#0
 source language#源语言#0
 syntax#语法#0
+symbolic#象征性，符号性#0
+out of bounds#溢出#0
